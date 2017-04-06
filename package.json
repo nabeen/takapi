@@ -17,9 +17,15 @@
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^4.3.4"
+    "hubot-slack": "^4.3.4",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0"
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/babel src --presets es2015 --out-dir dest"
   }
 }
