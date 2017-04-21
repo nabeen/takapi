@@ -128,6 +128,9 @@ module.exports = (robot) ->
   robot.hear /こんにち(は|わ)/, (msg) ->
     msg.send msg.random hellos
 
+  robot.hear /ちわ/, (msg) ->
+    msg.send msg.random hellos
+
   robot.enter (msg) ->
     msg.send msg.random hellos
 

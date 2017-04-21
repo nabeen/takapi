@@ -11,22 +11,22 @@ module.exports = (robot) ->
 
   # 平日のメッセージ
   new cronJob('0 0 2 * * 1-5', () ->
-    send '#general', "@here もう寝る時間だよ！夜更かししちゃダーメ！ｽﾔｽﾔ"
+    send '#general', "@here もう寝る時間だよ！夜更かししちゃダメだからね！"
   ).start()
 
   new cronJob('0 30 8 * * 1-5', () ->
-    send '#general', "@here もう起きた？そろそろ起きなきゃ遅刻しちゃうよ！ﾊﾞﾀﾊﾞﾀ"
+    send '#general', "@here もう起きた？そろそろ起きなきゃ遅刻しちゃうよ？"
   ).start()
 
   new cronJob('0 0 13 * * 1-5', () ->
-    send '#general', "@here ランチの時間だよ！お腹すいたぁ！ﾍﾟｺﾍﾟｺ"
+    send '#general', "@here ランチの時間だよ！お腹すいたぁ！"
   ).start()
 
   new cronJob('0 30 19 * * 1-5', () ->
-    send '#general', "@here まだ帰らないの？どうせ残業代出ないよ？ﾌﾟﾝﾌﾟﾝ"
+    send '#general', "@here まだ帰らないの？どうせ残業代出ないよ？"
   ).start()
 
   # 休日のメッセージ
   new cronJob('0 30 11 * * 0,6', () ->
-    send '#general', "@here もう起きた？休みだからって寝過ぎちゃダメだよ！ﾌﾟﾝﾌﾟﾝ"
+    send '#general', "@here もう起きた？休みだからって寝過ぎちゃダメだよ！"
   ).start()
