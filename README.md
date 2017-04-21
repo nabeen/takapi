@@ -1,3 +1,5 @@
+Hosted at Bluemix.
+
 # takapi
 
 takapi is a chat bot built on the [Hubot][hubot] framework. It was
